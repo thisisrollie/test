@@ -1,10 +1,9 @@
 pipeline {
-//     agent {
-//         node {
-//             label 'windows'
-//         }
-//     }
-    agent any
+    agent {
+        node {
+            label 'windows'
+        }
+    }
     triggers {
         pollSCM 'H/5 * * * *'
     }
